@@ -1,6 +1,8 @@
 ## ShopAR
 
-![Image working]()
+WorkFlow
+![Image working](/resources/base.png)
+
 ## Table of Contents
   * [Description](#description)
     * [Fitting](#fitting)
