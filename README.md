@@ -8,14 +8,11 @@
   * [Dependencies](#dependencies)
 
 
-
-
-
 ## Description
 Shopping online for clothes and accessories is made more personal, by letting the Shoppers/Users try on the clothes visually. before actually ordering them. We use Augmented Reality technology on a users mobile browser so that , they don't actually have to download another app. Our product can work as a webpage. The user can click only one single image for personalising his mannequin to their size. Hence they can now easily try on the clothes with different color and size to see which fits the best and which design matches their personality well
 
 ### Fitting
-we are using smplx and OpenPose for fitting the clothes to a virtual mannequin of the user that is obtained from a single image(monocular) of a mobile camera.
+we are using SMPLX[https://github.com/vchoutas/smplify-x] and OpenPose[https://github.com/CMU-Perceptual-Computing-Lab/openpose] for generating a custom 3D Human model for each users (virtual mannequin) from a single image(monocular) of a mobile camera.
 
 ### Different Body Models
 
@@ -30,11 +27,11 @@ with either *fit_smpl.yaml* or *fit_smplx.yaml*, i.e.:
     --model_folder MODEL_FOLDER
 
  ```
-
+Follow the necessary steps to setup in given dependencies.
 
 ### Visualizing Results
 
-Visualizing the result from Zappar where the 3d model is augmented in the real world
+Visualizing the result from ZapparWorks[https://zap.works] {WebAR using three.js} where the 3d model is augmented in the real world with feature available [World Tracking/ Image trigger]
 
 ## Dependencies
 
@@ -43,6 +40,6 @@ fitting code.
 
 1. [PyTorch](https://pytorch.org/)
 2. [SMPL-X](https://github.com/vchoutas/smplx)
-3. ZAPPAR (For Augmented Reality)
+3. ZAPWORKS (For Augmented Reality)
 4. Blender (For cloth Stitching)
 5. OpenPose for human detection and pose detection
